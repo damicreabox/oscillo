@@ -1,9 +1,6 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.8)
 
-project(oscillo)
-set(CMAKE_CXX_STANDARD 14)
-
-include(cmake/uncrustify.cmake)
+set(COMMON_PATH ${PROJECT_SOURCE_DIR}/cmake/)
+include(${CMAKE_SOURCE_DIR}/cmake/common.cmake)
 
 add_subdirectory(gui)
-
